@@ -1,35 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sestilos.css">
-    <title>Inicio de Sesion</title>
-</head>
-<body>
-    <div class="box">
-        <span class="borderline"></span>
-        <form action="/index2.html">
-            <h2 id="titulo">Sing in</h2>
-            <div class="inputBox">
-                <input id="usuario1" type="text" required="required">
-                <span id="usuario">Username</span>
-                <i></i>
-            </div>
-            <div class="inputBox">
-                <input id="cons"type="password" required="required">
-                <span id="contrasena">Contraseña</span>
-                <i></i>
-            </div>
-            <div class="links">
-                <a href="#">Forgot Password</a>
-                <a href="#">Singnup</a>
-            </div>
-            <input type="submit" value="Iniciar" id="boton" onclick="redireccion()">
-        </form>
-    </div>
-    <script>
-        let titulo = document.getElementById('titulo');
+function redireccion(){
+    let titulo = document.getElementById('titulo');
         titulo.textContent = "Inicio de sescion";
 
         let usuario = document.getElementById('usuario');
@@ -45,12 +15,12 @@
         let contrasena = document.getElementById('cons');
         if(contrasena == "01082003"){
             alert("Bienvenido hamo");
-            inicio.href="redireccion()";
+            location.href="redireccion()";
         }else{
             alert("No eres hamo");
             //inicio.href="redireccion()";
         }
-         if(usuario == "alex"){
+        if(usuario == "alex"){
             alert("Bienvenido Alex");
         }else{
             alert("No eres Alex");
@@ -72,6 +42,13 @@
             alert("No eres un esclavo");
             alert("Fuera de aqui escoria");
         }
-    </script>
-    <script src="link.js"></script>
-</body>
+        
+}
+
+function redireccion1(){
+    location.href="jefe.html";
+}       
+
+function redireccion2(){
+    location.href="trebajador.html";
+}

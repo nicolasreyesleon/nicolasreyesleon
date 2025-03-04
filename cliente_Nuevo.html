@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente nuevo</title>
+    <link rel="stylesheet" href="stylonuevo.css">
+</head>
+<body>
+    <div class="box">
+        <span class="borderline"></span>
+            <form action="jefe.html" method="get">
+                <label for="Nombre"> Nombre </label>
+                <input type="text" id="nombre" name="nombre" placeholder="nombre"/>
+                <br>
+                <label for="Apellido"> Apellido </label>
+                <input type="text" id="apellido" name="apellido" placeholder="apellido"/>
+                <br>
+                <label for="Numero edad"> Edad </label>
+                <input type="number" id="edad" name="edad" placeholder="edad"/>
+                <br>
+                <label for="correo"> Correo </label>
+                <input type="email" id="email" name="email" placeholder="correo electronico" />
+                <br>
+                <label for="Telefono"> Telefono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="numero telefono movil"/>
+                <br>
+                <label for="usario"> Usuario </label>
+                <input type="tect" id="usuario" name="usuario" placeholder="escriba su apodo "/>
+                <br>
+                <label for="password">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="contraseña"/>
+                <br>
+                <label for="confirmar">Confirmar</label>
+                <input type="password" id="confirmar" name="confirmar" placeholder="confirmar contraseña"/>
+                <br>
+                <input type="submit">
+                <script>
+                    let usuarios = document.getElementById("usuario");
+                    let contraseña = document.getElementById("contraseña");
+                    let nuevo = document.getElementById("confirmar");
+                    if(contraseña == nuevo){
+                        alert("La contraseña es correta")
+                    }else {
+                        alert("La contraseña es incorrecta")
+                    }
+                </script>
+         </form>
+    </div>
+    <script src="links.js"></script>
+</body>
+</html>
