@@ -10,7 +10,7 @@ function redireccion(){
         if(usuario == "hacker"){
             alert("Bienvenido hacker");
         }else{
-            alert("No eres hacker");
+            alert("No eres hacker"); 
         }
         let contrasena = document.getElementById('cons');
         if(contrasena == "01082003"){
